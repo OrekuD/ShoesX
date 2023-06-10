@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		799E66722A34688200A26812 /* ShoeXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66712A34688200A26812 /* ShoeXApp.swift */; };
+		799E66742A34688200A26812 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66732A34688200A26812 /* ContentView.swift */; };
+		799E66762A34688200A26812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799E66752A34688200A26812 /* Assets.xcassets */; };
+		799E66792A34688200A26812 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799E66782A34688200A26812 /* Preview Assets.xcassets */; };
+		799E66832A34688200A26812 /* ShoeXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66822A34688200A26812 /* ShoeXTests.swift */; };
+		799E668D2A34688300A26812 /* ShoeXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E668C2A34688300A26812 /* ShoeXUITests.swift */; };
+		799E668F2A34688300A26812 /* ShoeXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E668E2A34688300A26812 /* ShoeXUITestsLaunchTests.swift */; };
+		799E66CA2A346EEE00A26812 /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66BB2A346EEE00A26812 /* Satoshi-Bold.otf */; };
+		799E66CB2A346EEE00A26812 /* Satoshi-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66BC2A346EEE00A26812 /* Satoshi-Black.otf */; };
+		799E66CC2A346EEE00A26812 /* Teko-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66BD2A346EEE00A26812 /* Teko-Medium.otf */; };
+		799E66CD2A346EEE00A26812 /* Satoshi-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66BE2A346EEE00A26812 /* Satoshi-BlackItalic.otf */; };
+		799E66CE2A346EEE00A26812 /* Satoshi-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66BF2A346EEE00A26812 /* Satoshi-Italic.otf */; };
+		799E66CF2A346EEE00A26812 /* Satoshi-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C02A346EEE00A26812 /* Satoshi-Light.otf */; };
+		799E66D02A346EEE00A26812 /* Teko-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C12A346EEE00A26812 /* Teko-SemiBold.otf */; };
+		799E66D12A346EEE00A26812 /* Teko-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C22A346EEE00A26812 /* Teko-Light.otf */; };
+		799E66D22A346EEE00A26812 /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C32A346EEE00A26812 /* Satoshi-Medium.otf */; };
+		799E66D32A346EEE00A26812 /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C42A346EEE00A26812 /* Satoshi-Regular.otf */; };
+		799E66D42A346EEE00A26812 /* Teko-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C52A346EEE00A26812 /* Teko-Bold.otf */; };
+		799E66D52A346EEE00A26812 /* Satoshi-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C62A346EEE00A26812 /* Satoshi-MediumItalic.otf */; };
+		799E66D62A346EEE00A26812 /* Teko-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C72A346EEE00A26812 /* Teko-Regular.otf */; };
+		799E66D72A346EEE00A26812 /* Satoshi-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C82A346EEE00A26812 /* Satoshi-BoldItalic.otf */; };
+		799E66D82A346EEE00A26812 /* Satoshi-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C92A346EEE00A26812 /* Satoshi-LightItalic.otf */; };
+		799E66DA2A34724A00A26812 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799E66D92A34724A00A26812 /* Launch Screen.storyboard */; };
+		799E66DD2A347B8500A26812 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66DC2A347B8500A26812 /* LoginView.swift */; };
+		799E66E02A3484E900A26812 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66DF2A3484E900A26812 /* TextInput.swift */; };
+		799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E12A348AEC00A26812 /* ButtonView.swift */; };
+		799E66E62A34AE5700A26812 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E52A34AE5700A26812 /* SignupView.swift */; };
+		799E66E82A34AFDE00A26812 /* SecureYourAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E72A34AFDE00A26812 /* SecureYourAccount.swift */; };
+		799E66EA2A34B14800A26812 /* OutlinedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E92A34B14800A26812 /* OutlinedButtonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		799E667F2A34688200A26812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799E66662A34688200A26812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799E666D2A34688200A26812;
+			remoteInfo = ShoeX;
+		};
+		799E66892A34688300A26812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799E66662A34688200A26812 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799E666D2A34688200A26812;
+			remoteInfo = ShoeX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		799E666E2A34688200A26812 /* ShoeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		799E66712A34688200A26812 /* ShoeXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeXApp.swift; sourceTree = "<group>"; };
+		799E66732A34688200A26812 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		799E66752A34688200A26812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		799E66782A34688200A26812 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		799E667E2A34688200A26812 /* ShoeXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		799E66822A34688200A26812 /* ShoeXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeXTests.swift; sourceTree = "<group>"; };
+		799E66882A34688300A26812 /* ShoeXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		799E668C2A34688300A26812 /* ShoeXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeXUITests.swift; sourceTree = "<group>"; };
+		799E668E2A34688300A26812 /* ShoeXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		799E66BA2A346CF200A26812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		799E66BB2A346EEE00A26812 /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		799E66BC2A346EEE00A26812 /* Satoshi-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Black.otf"; sourceTree = "<group>"; };
+		799E66BD2A346EEE00A26812 /* Teko-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Medium.otf"; sourceTree = "<group>"; };
+		799E66BE2A346EEE00A26812 /* Satoshi-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BlackItalic.otf"; sourceTree = "<group>"; };
+		799E66BF2A346EEE00A26812 /* Satoshi-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Italic.otf"; sourceTree = "<group>"; };
+		799E66C02A346EEE00A26812 /* Satoshi-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Light.otf"; sourceTree = "<group>"; };
+		799E66C12A346EEE00A26812 /* Teko-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-SemiBold.otf"; sourceTree = "<group>"; };
+		799E66C22A346EEE00A26812 /* Teko-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.otf"; sourceTree = "<group>"; };
+		799E66C32A346EEE00A26812 /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
+		799E66C42A346EEE00A26812 /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
+		799E66C52A346EEE00A26812 /* Teko-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.otf"; sourceTree = "<group>"; };
+		799E66C62A346EEE00A26812 /* Satoshi-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-MediumItalic.otf"; sourceTree = "<group>"; };
+		799E66C72A346EEE00A26812 /* Teko-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Regular.otf"; sourceTree = "<group>"; };
+		799E66C82A346EEE00A26812 /* Satoshi-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.otf"; sourceTree = "<group>"; };
+		799E66C92A346EEE00A26812 /* Satoshi-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.otf"; sourceTree = "<group>"; };
+		799E66D92A34724A00A26812 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		799E66DC2A347B8500A26812 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		799E66DF2A3484E900A26812 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		799E66E12A348AEC00A26812 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		799E66E52A34AE5700A26812 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		799E66E72A34AFDE00A26812 /* SecureYourAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureYourAccount.swift; sourceTree = "<group>"; };
+		799E66E92A34B14800A26812 /* OutlinedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButtonView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		799E666B2A34688200A26812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799E667B2A34688200A26812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799E66852A34688300A26812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		799E66652A34688200A26812 = {
+			isa = PBXGroup;
+			children = (
+				799E66702A34688200A26812 /* ShoeX */,
+				799E66812A34688200A26812 /* ShoeXTests */,
+				799E668B2A34688300A26812 /* ShoeXUITests */,
+				799E666F2A34688200A26812 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		799E666F2A34688200A26812 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				799E666E2A34688200A26812 /* ShoeX.app */,
+				799E667E2A34688200A26812 /* ShoeXTests.xctest */,
+				799E66882A34688300A26812 /* ShoeXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		799E66702A34688200A26812 /* ShoeX */ = {
+			isa = PBXGroup;
+			children = (
+				799E66BA2A346CF200A26812 /* Info.plist */,
+				799E66712A34688200A26812 /* ShoeXApp.swift */,
+				799E66DE2A3484C700A26812 /* components */,
+				799E66732A34688200A26812 /* ContentView.swift */,
+				799E66D92A34724A00A26812 /* Launch Screen.storyboard */,
+				799E66DB2A347B5A00A26812 /* screens */,
+				799E66752A34688200A26812 /* Assets.xcassets */,
+				799E66BC2A346EEE00A26812 /* Satoshi-Black.otf */,
+				799E66BE2A346EEE00A26812 /* Satoshi-BlackItalic.otf */,
+				799E66BB2A346EEE00A26812 /* Satoshi-Bold.otf */,
+				799E66C82A346EEE00A26812 /* Satoshi-BoldItalic.otf */,
+				799E66BF2A346EEE00A26812 /* Satoshi-Italic.otf */,
+				799E66C02A346EEE00A26812 /* Satoshi-Light.otf */,
+				799E66C92A346EEE00A26812 /* Satoshi-LightItalic.otf */,
+				799E66C32A346EEE00A26812 /* Satoshi-Medium.otf */,
+				799E66C62A346EEE00A26812 /* Satoshi-MediumItalic.otf */,
+				799E66C42A346EEE00A26812 /* Satoshi-Regular.otf */,
+				799E66C52A346EEE00A26812 /* Teko-Bold.otf */,
+				799E66C22A346EEE00A26812 /* Teko-Light.otf */,
+				799E66BD2A346EEE00A26812 /* Teko-Medium.otf */,
+				799E66C72A346EEE00A26812 /* Teko-Regular.otf */,
+				799E66C12A346EEE00A26812 /* Teko-SemiBold.otf */,
+				799E66772A34688200A26812 /* Preview Content */,
+			);
+			path = ShoeX;
+			sourceTree = "<group>";
+		};
+		799E66772A34688200A26812 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				799E66782A34688200A26812 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		799E66812A34688200A26812 /* ShoeXTests */ = {
+			isa = PBXGroup;
+			children = (
+				799E66822A34688200A26812 /* ShoeXTests.swift */,
+			);
+			path = ShoeXTests;
+			sourceTree = "<group>";
+		};
+		799E668B2A34688300A26812 /* ShoeXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				799E668C2A34688300A26812 /* ShoeXUITests.swift */,
+				799E668E2A34688300A26812 /* ShoeXUITestsLaunchTests.swift */,
+			);
+			path = ShoeXUITests;
+			sourceTree = "<group>";
+		};
+		799E66DB2A347B5A00A26812 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				799E66DC2A347B8500A26812 /* LoginView.swift */,
+				799E66E72A34AFDE00A26812 /* SecureYourAccount.swift */,
+				799E66E52A34AE5700A26812 /* SignupView.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		799E66DE2A3484C700A26812 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				799E66DF2A3484E900A26812 /* TextInput.swift */,
+				799E66E12A348AEC00A26812 /* ButtonView.swift */,
+				799E66E92A34B14800A26812 /* OutlinedButtonView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		799E666D2A34688200A26812 /* ShoeX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799E66922A34688300A26812 /* Build configuration list for PBXNativeTarget "ShoeX" */;
+			buildPhases = (
+				799E666A2A34688200A26812 /* Sources */,
+				799E666B2A34688200A26812 /* Frameworks */,
+				799E666C2A34688200A26812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoeX;
+			productName = ShoeX;
+			productReference = 799E666E2A34688200A26812 /* ShoeX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		799E667D2A34688200A26812 /* ShoeXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799E66952A34688300A26812 /* Build configuration list for PBXNativeTarget "ShoeXTests" */;
+			buildPhases = (
+				799E667A2A34688200A26812 /* Sources */,
+				799E667B2A34688200A26812 /* Frameworks */,
+				799E667C2A34688200A26812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				799E66802A34688200A26812 /* PBXTargetDependency */,
+			);
+			name = ShoeXTests;
+			productName = ShoeXTests;
+			productReference = 799E667E2A34688200A26812 /* ShoeXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		799E66872A34688300A26812 /* ShoeXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799E66982A34688300A26812 /* Build configuration list for PBXNativeTarget "ShoeXUITests" */;
+			buildPhases = (
+				799E66842A34688300A26812 /* Sources */,
+				799E66852A34688300A26812 /* Frameworks */,
+				799E66862A34688300A26812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				799E668A2A34688300A26812 /* PBXTargetDependency */,
+			);
+			name = ShoeXUITests;
+			productName = ShoeXUITests;
+			productReference = 799E66882A34688300A26812 /* ShoeXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		799E66662A34688200A26812 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					799E666D2A34688200A26812 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					799E667D2A34688200A26812 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 799E666D2A34688200A26812;
+					};
+					799E66872A34688300A26812 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 799E666D2A34688200A26812;
+					};
+				};
+			};
+			buildConfigurationList = 799E66692A34688200A26812 /* Build configuration list for PBXProject "ShoeX" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 799E66652A34688200A26812;
+			productRefGroup = 799E666F2A34688200A26812 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				799E666D2A34688200A26812 /* ShoeX */,
+				799E667D2A34688200A26812 /* ShoeXTests */,
+				799E66872A34688300A26812 /* ShoeXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		799E666C2A34688200A26812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799E66CF2A346EEE00A26812 /* Satoshi-Light.otf in Resources */,
+				799E66CA2A346EEE00A26812 /* Satoshi-Bold.otf in Resources */,
+				799E66CD2A346EEE00A26812 /* Satoshi-BlackItalic.otf in Resources */,
+				799E66D22A346EEE00A26812 /* Satoshi-Medium.otf in Resources */,
+				799E66CB2A346EEE00A26812 /* Satoshi-Black.otf in Resources */,
+				799E66D62A346EEE00A26812 /* Teko-Regular.otf in Resources */,
+				799E66CE2A346EEE00A26812 /* Satoshi-Italic.otf in Resources */,
+				799E66CC2A346EEE00A26812 /* Teko-Medium.otf in Resources */,
+				799E66792A34688200A26812 /* Preview Assets.xcassets in Resources */,
+				799E66D52A346EEE00A26812 /* Satoshi-MediumItalic.otf in Resources */,
+				799E66D32A346EEE00A26812 /* Satoshi-Regular.otf in Resources */,
+				799E66D42A346EEE00A26812 /* Teko-Bold.otf in Resources */,
+				799E66DA2A34724A00A26812 /* Launch Screen.storyboard in Resources */,
+				799E66D72A346EEE00A26812 /* Satoshi-BoldItalic.otf in Resources */,
+				799E66D82A346EEE00A26812 /* Satoshi-LightItalic.otf in Resources */,
+				799E66762A34688200A26812 /* Assets.xcassets in Resources */,
+				799E66D02A346EEE00A26812 /* Teko-SemiBold.otf in Resources */,
+				799E66D12A346EEE00A26812 /* Teko-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799E667C2A34688200A26812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799E66862A34688300A26812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		799E666A2A34688200A26812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799E66E62A34AE5700A26812 /* SignupView.swift in Sources */,
+				799E66DD2A347B8500A26812 /* LoginView.swift in Sources */,
+				799E66742A34688200A26812 /* ContentView.swift in Sources */,
+				799E66EA2A34B14800A26812 /* OutlinedButtonView.swift in Sources */,
+				799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */,
+				799E66722A34688200A26812 /* ShoeXApp.swift in Sources */,
+				799E66E82A34AFDE00A26812 /* SecureYourAccount.swift in Sources */,
+				799E66E02A3484E900A26812 /* TextInput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799E667A2A34688200A26812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799E66832A34688200A26812 /* ShoeXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799E66842A34688300A26812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				799E668F2A34688300A26812 /* ShoeXUITestsLaunchTests.swift in Sources */,
+				799E668D2A34688300A26812 /* ShoeXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		799E66802A34688200A26812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799E666D2A34688200A26812 /* ShoeX */;
+			targetProxy = 799E667F2A34688200A26812 /* PBXContainerItemProxy */;
+		};
+		799E668A2A34688300A26812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799E666D2A34688200A26812 /* ShoeX */;
+			targetProxy = 799E66892A34688300A26812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		799E66902A34688300A26812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		799E66912A34688300A26812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		799E66932A34688300A26812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShoeX/Preview Content\"";
+				DEVELOPMENT_TEAM = ZSY7XM2LK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShoeX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShoesX;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreku.shoex.ShoeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		799E66942A34688300A26812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShoeX/Preview Content\"";
+				DEVELOPMENT_TEAM = ZSY7XM2LK5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShoeX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShoesX;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreku.shoex.ShoeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		799E66962A34688300A26812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSY7XM2LK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreku.shoex.ShoeXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoeX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoeX";
+			};
+			name = Debug;
+		};
+		799E66972A34688300A26812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSY7XM2LK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreku.shoex.ShoeXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoeX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoeX";
+			};
+			name = Release;
+		};
+		799E66992A34688300A26812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSY7XM2LK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreku.shoex.ShoeXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoeX;
+			};
+			name = Debug;
+		};
+		799E669A2A34688300A26812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSY7XM2LK5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oreku.shoex.ShoeXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoeX;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		799E66692A34688200A26812 /* Build configuration list for PBXProject "ShoeX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799E66902A34688300A26812 /* Debug */,
+				799E66912A34688300A26812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799E66922A34688300A26812 /* Build configuration list for PBXNativeTarget "ShoeX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799E66932A34688300A26812 /* Debug */,
+				799E66942A34688300A26812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799E66952A34688300A26812 /* Build configuration list for PBXNativeTarget "ShoeXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799E66962A34688300A26812 /* Debug */,
+				799E66972A34688300A26812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		799E66982A34688300A26812 /* Build configuration list for PBXNativeTarget "ShoeXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				799E66992A34688300A26812 /* Debug */,
+				799E669A2A34688300A26812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 799E66662A34688200A26812 /* Project object */;
+}
