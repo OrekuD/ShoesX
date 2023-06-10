@@ -52,8 +52,8 @@ struct VerifyYourIdentityScreen: View {
                     
                     VStack(spacing: 12) {
                         
-                        Button {
-                            
+                        NavigationLink {
+                            MainScreen()
                         } label: {
                             ButtonView(buttonVariant: .leading, label: "Continue")
                         }
@@ -86,6 +86,7 @@ struct VerifyYourIdentityScreen: View {
             }
             .frame(maxWidth: .infinity)
         }
+//        .navigationBarBackButtonHidden(true)
         .padding(.horizontal, 20)
     }
 }

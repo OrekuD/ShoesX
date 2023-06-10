@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SignupScreen: View {
     @Environment(\.colorScheme) private var colorScheme;
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>;
+    
     @State private var firstname = ""
     @State private var lastname = ""
     @State private var email = ""
@@ -85,8 +87,8 @@ struct SignupScreen: View {
                             Text("Already have an account?")
                                 .font(.custom("Satoshi-Regular", size: 14))
                             
-                            NavigationLink {
-                                LoginScreen()
+                            Button {
+                                presentationMode.wrappedValue.dismiss()
                             } label: {
                                 Text("Sign in")
                                     .font(.custom("Satoshi-Bold", size: 14))
@@ -103,6 +105,7 @@ struct SignupScreen: View {
                 }
                 .frame(maxWidth: .infinity)
             }
+//            .navigationBarBackButtonHidden(true)
             .padding(.horizontal, 20)
         }
     }

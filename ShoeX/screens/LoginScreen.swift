@@ -29,8 +29,8 @@ struct LoginScreen: View {
                         TextInput(value: email, label: "Email address", placeholder: "Please enter your email")
                         TextInput(value: password, label: "Password", placeholder: "*********", isPasswordField: true)
                         
-                        Button {
-                            
+                        NavigationLink {
+                            MainScreen()
                         } label: {
                             Text("Forgot Password")
                                 .font(.custom("Satoshi-Bold", size: 14))
@@ -41,8 +41,8 @@ struct LoginScreen: View {
                         
                         VStack(spacing: 12) {
                            
-                            Button {
-                                
+                            NavigationLink {
+                                MainScreen()
                             } label: {
                                 ButtonView(buttonVariant: .leading, label: "Log In")
                             }

@@ -99,9 +99,14 @@ struct SecureYourAccountScreen: View {
                             ButtonView(buttonVariant: .leading, label: "Continue")
                         }
                         
-                        OutlinedButtonView(
-                            label: "Maybe Later"
-                        )
+                        NavigationLink {
+                            MainScreen()
+                        } label: {
+                            OutlinedButtonView(
+                                label: "Maybe Later"
+                            )
+                        }
+
                         
                     }
                     .padding(.top, 32)
@@ -112,6 +117,7 @@ struct SecureYourAccountScreen: View {
             }
             .frame(maxWidth: .infinity)
         }
+//        .navigationBarBackButtonHidden(true)
         .padding(.horizontal, 20)
         .sheet(isPresented: $isCountryPickerOpen, onDismiss: {
             withAnimation {
