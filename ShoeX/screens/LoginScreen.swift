@@ -1,16 +1,13 @@
 //
-//  SignupView.swift
+//  LoginView.swift
 //  ShoeX
 //
-//  Created by Cyboticx LLC on 10/06/2023.
+//  Created by David Opoku on 10/06/2023.
 //
 
 import SwiftUI
 
-struct SignupView: View {
-    @Environment(\.colorScheme) private var colorScheme;
-    @State private var firstname = ""
-    @State private var lastname = ""
+struct LoginScreen: View {
     @State private var email = ""
     @State private var password = ""
     
@@ -18,28 +15,36 @@ struct SignupView: View {
         ScrollView {
             VStack(alignment: .leading) {
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("Join with our Market")
+                    Text("Welcome back!")
                         .font(.custom("Teko-Regular", size: 42))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 32)
                     
-                    Text("4,000,000 + shoes already to buy or sell")
+                    Text("Manager your Bids, Sells & More")
                         .font(.custom("Satoshi-Regular", size: 16))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 8)
                     
                     VStack(spacing: 0) {
-                        TextInput(value: firstname, label: "First Name", placeholder: "Please enter your first name")
-                        TextInput(value: lastname, label: "Last Name", placeholder: "Please enter your last name")
                         TextInput(value: email, label: "Email address", placeholder: "Please enter your email")
                         TextInput(value: password, label: "Password", placeholder: "*********", isPasswordField: true)
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("Forgot Password")
+                                .font(.custom("Satoshi-Bold", size: 14))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                        }
+                        .padding(.top, 4)
                         
                         VStack(spacing: 12) {
                            
                             Button {
                                 
                             } label: {
-                                ButtonView(buttonVariant: .leading, label: "Sign Up")
+                                ButtonView(buttonVariant: .leading, label: "Log In")
                             }
                             
                             Text("Or")
@@ -78,19 +83,20 @@ struct SignupView: View {
                             }
                             
                         }
-                        .padding(.top, 24)
+                        .padding(.top, 32)
                         
                         HStack {
-                            Text("Already have an account?")
+                            Text("Don't have an account?")
                                 .font(.custom("Satoshi-Regular", size: 14))
                             
-                            Button {
-                                
+                            NavigationLink {
+                                SignupScreen()
                             } label: {
-                                Text("Sign in")
+                                Text("Join with us")
                                     .font(.custom("Satoshi-Bold", size: 14))
-                                
+                                    .foregroundColor(.blue)
                             }
+
                         }
                         .padding(.top, 24)
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -106,11 +112,11 @@ struct SignupView: View {
     }
 }
 
-struct SignupView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        SignupView()
+        LoginScreen()
             .preferredColorScheme(.dark)
-        SignupView()
+        LoginScreen()
             .preferredColorScheme(.light)
     }
 }

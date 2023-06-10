@@ -30,12 +30,15 @@
 		799E66D72A346EEE00A26812 /* Satoshi-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C82A346EEE00A26812 /* Satoshi-BoldItalic.otf */; };
 		799E66D82A346EEE00A26812 /* Satoshi-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 799E66C92A346EEE00A26812 /* Satoshi-LightItalic.otf */; };
 		799E66DA2A34724A00A26812 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799E66D92A34724A00A26812 /* Launch Screen.storyboard */; };
-		799E66DD2A347B8500A26812 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66DC2A347B8500A26812 /* LoginView.swift */; };
+		799E66DD2A347B8500A26812 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66DC2A347B8500A26812 /* LoginScreen.swift */; };
 		799E66E02A3484E900A26812 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66DF2A3484E900A26812 /* TextInput.swift */; };
 		799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E12A348AEC00A26812 /* ButtonView.swift */; };
-		799E66E62A34AE5700A26812 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E52A34AE5700A26812 /* SignupView.swift */; };
-		799E66E82A34AFDE00A26812 /* SecureYourAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E72A34AFDE00A26812 /* SecureYourAccount.swift */; };
+		799E66E62A34AE5700A26812 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E52A34AE5700A26812 /* SignupScreen.swift */; };
+		799E66E82A34AFDE00A26812 /* SecureYourAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E72A34AFDE00A26812 /* SecureYourAccountScreen.swift */; };
 		799E66EA2A34B14800A26812 /* OutlinedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E92A34B14800A26812 /* OutlinedButtonView.swift */; };
+		799E66ED2A34BA8E00A26812 /* AppViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66EC2A34BA8E00A26812 /* AppViewModal.swift */; };
+		79F4E5332A34C5CE0022B182 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */; };
+		79F4E5352A34D6120022B182 /* VerifyYourIdentityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,12 +86,15 @@
 		799E66C82A346EEE00A26812 /* Satoshi-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-BoldItalic.otf"; sourceTree = "<group>"; };
 		799E66C92A346EEE00A26812 /* Satoshi-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-LightItalic.otf"; sourceTree = "<group>"; };
 		799E66D92A34724A00A26812 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		799E66DC2A347B8500A26812 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		799E66DC2A347B8500A26812 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		799E66DF2A3484E900A26812 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
 		799E66E12A348AEC00A26812 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		799E66E52A34AE5700A26812 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		799E66E72A34AFDE00A26812 /* SecureYourAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureYourAccount.swift; sourceTree = "<group>"; };
+		799E66E52A34AE5700A26812 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
+		799E66E72A34AFDE00A26812 /* SecureYourAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureYourAccountScreen.swift; sourceTree = "<group>"; };
 		799E66E92A34B14800A26812 /* OutlinedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButtonView.swift; sourceTree = "<group>"; };
+		799E66EC2A34BA8E00A26812 /* AppViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModal.swift; sourceTree = "<group>"; };
+		79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+		79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyYourIdentityScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 				799E66712A34688200A26812 /* ShoeXApp.swift */,
 				799E66DE2A3484C700A26812 /* components */,
 				799E66732A34688200A26812 /* ContentView.swift */,
+				799E66EB2A34BA6D00A26812 /* ViewModel */,
 				799E66D92A34724A00A26812 /* Launch Screen.storyboard */,
 				799E66DB2A347B5A00A26812 /* screens */,
 				799E66752A34688200A26812 /* Assets.xcassets */,
@@ -194,9 +201,10 @@
 		799E66DB2A347B5A00A26812 /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				799E66DC2A347B8500A26812 /* LoginView.swift */,
-				799E66E72A34AFDE00A26812 /* SecureYourAccount.swift */,
-				799E66E52A34AE5700A26812 /* SignupView.swift */,
+				799E66DC2A347B8500A26812 /* LoginScreen.swift */,
+				799E66E72A34AFDE00A26812 /* SecureYourAccountScreen.swift */,
+				79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */,
+				799E66E52A34AE5700A26812 /* SignupScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -206,9 +214,18 @@
 			children = (
 				799E66DF2A3484E900A26812 /* TextInput.swift */,
 				799E66E12A348AEC00A26812 /* ButtonView.swift */,
+				79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */,
 				799E66E92A34B14800A26812 /* OutlinedButtonView.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		799E66EB2A34BA6D00A26812 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				799E66EC2A34BA8E00A26812 /* AppViewModal.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,13 +374,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799E66E62A34AE5700A26812 /* SignupView.swift in Sources */,
-				799E66DD2A347B8500A26812 /* LoginView.swift in Sources */,
+				799E66E62A34AE5700A26812 /* SignupScreen.swift in Sources */,
+				799E66DD2A347B8500A26812 /* LoginScreen.swift in Sources */,
 				799E66742A34688200A26812 /* ContentView.swift in Sources */,
 				799E66EA2A34B14800A26812 /* OutlinedButtonView.swift in Sources */,
 				799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */,
+				79F4E5352A34D6120022B182 /* VerifyYourIdentityScreen.swift in Sources */,
+				79F4E5332A34C5CE0022B182 /* CountryPickerView.swift in Sources */,
+				799E66ED2A34BA8E00A26812 /* AppViewModal.swift in Sources */,
 				799E66722A34688200A26812 /* ShoeXApp.swift in Sources */,
-				799E66E82A34AFDE00A26812 /* SecureYourAccount.swift in Sources */,
+				799E66E82A34AFDE00A26812 /* SecureYourAccountScreen.swift in Sources */,
 				799E66E02A3484E900A26812 /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

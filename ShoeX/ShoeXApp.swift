@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ShoeXApp: App {
+    @StateObject var appViewModel: AppViewModel = AppViewModel();
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .background(.black)
+                .environmentObject(appViewModel)
         }
     }
 }
