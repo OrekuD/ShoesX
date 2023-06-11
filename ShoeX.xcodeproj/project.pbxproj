@@ -40,6 +40,10 @@
 		79F4E5332A34C5CE0022B182 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */; };
 		79F4E5352A34D6120022B182 /* VerifyYourIdentityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */; };
 		79F4E5372A34DA6E0022B182 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5362A34DA6E0022B182 /* MainScreen.swift */; };
+		79F4E53C2A3571D60022B182 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E53B2A3571D60022B182 /* HomeScreen.swift */; };
+		79F4E53E2A3571E80022B182 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E53D2A3571E80022B182 /* SearchScreen.swift */; };
+		79F4E5402A3571FE0022B182 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E53F2A3571FE0022B182 /* ProfileScreen.swift */; };
+		79F4E5422A35720E0022B182 /* NotificationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5412A35720E0022B182 /* NotificationsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,10 @@
 		79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
 		79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyYourIdentityScreen.swift; sourceTree = "<group>"; };
 		79F4E5362A34DA6E0022B182 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		79F4E53B2A3571D60022B182 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		79F4E53D2A3571E80022B182 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		79F4E53F2A3571FE0022B182 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		79F4E5412A35720E0022B182 /* NotificationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +159,7 @@
 				799E66712A34688200A26812 /* ShoeXApp.swift */,
 				799E66DE2A3484C700A26812 /* components */,
 				799E66732A34688200A26812 /* ContentView.swift */,
-				799E66EB2A34BA6D00A26812 /* ViewModel */,
+				79F4E53A2A3569180022B182 /* viewmodel */,
 				799E66D92A34724A00A26812 /* Launch Screen.storyboard */,
 				799E66DB2A347B5A00A26812 /* screens */,
 				799E66752A34688200A26812 /* Assets.xcassets */,
@@ -206,6 +214,10 @@
 				799E66DC2A347B8500A26812 /* LoginScreen.swift */,
 				799E66E72A34AFDE00A26812 /* SecureYourAccountScreen.swift */,
 				79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */,
+				79F4E53D2A3571E80022B182 /* SearchScreen.swift */,
+				79F4E53F2A3571FE0022B182 /* ProfileScreen.swift */,
+				79F4E5412A35720E0022B182 /* NotificationsScreen.swift */,
+				79F4E53B2A3571D60022B182 /* HomeScreen.swift */,
 				79F4E5362A34DA6E0022B182 /* MainScreen.swift */,
 				799E66E52A34AE5700A26812 /* SignupScreen.swift */,
 			);
@@ -223,12 +235,12 @@
 			path = components;
 			sourceTree = "<group>";
 		};
-		799E66EB2A34BA6D00A26812 /* ViewModel */ = {
+		79F4E53A2A3569180022B182 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
 				799E66EC2A34BA8E00A26812 /* AppViewModal.swift */,
 			);
-			path = ViewModel;
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,14 +392,18 @@
 				79F4E5372A34DA6E0022B182 /* MainScreen.swift in Sources */,
 				799E66E62A34AE5700A26812 /* SignupScreen.swift in Sources */,
 				799E66DD2A347B8500A26812 /* LoginScreen.swift in Sources */,
+				79F4E53E2A3571E80022B182 /* SearchScreen.swift in Sources */,
+				79F4E5402A3571FE0022B182 /* ProfileScreen.swift in Sources */,
 				799E66742A34688200A26812 /* ContentView.swift in Sources */,
 				799E66EA2A34B14800A26812 /* OutlinedButtonView.swift in Sources */,
 				799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */,
+				79F4E53C2A3571D60022B182 /* HomeScreen.swift in Sources */,
 				79F4E5352A34D6120022B182 /* VerifyYourIdentityScreen.swift in Sources */,
 				79F4E5332A34C5CE0022B182 /* CountryPickerView.swift in Sources */,
 				799E66ED2A34BA8E00A26812 /* AppViewModal.swift in Sources */,
 				799E66722A34688200A26812 /* ShoeXApp.swift in Sources */,
 				799E66E82A34AFDE00A26812 /* SecureYourAccountScreen.swift in Sources */,
+				79F4E5422A35720E0022B182 /* NotificationsScreen.swift in Sources */,
 				799E66E02A3484E900A26812 /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

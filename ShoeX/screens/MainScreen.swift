@@ -2,15 +2,58 @@
 //  MainScreen.swift
 //  ShoeX
 //
-//  Created by Cyboticx LLC on 10/06/2023.
+//  Created by David Opoku on 10/06/2023.
 //
 
 import SwiftUI
 
+struct TabItem: Hashable {
+    var id: Int;
+    var activeIcon: String;
+    var inActiveIcon: String;
+}
+
 struct MainScreen: View {
+    @State private var activeIndex = 0;
+    
+    var tabs: [TabItem] = [
+        TabItem(id: 0, activeIcon: "logo", inActiveIcon: "logo-disabled"),
+        TabItem(id: 1, activeIcon: "search", inActiveIcon: "search-disabled"),
+        TabItem(id: 2, activeIcon: "notifications", inActiveIcon: "notifications-disabled"),
+        TabItem(id: 3, activeIcon: "profile", inActiveIcon: "profile-disabled"),
+    ]
+    
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 0) {
+            TabView(selection: $activeIndex) {
+                HomeScreen()
+                    .tag(0)
+                SearchScreen()
+                    .tag(1)
+                NotificationsScreen()
+                    .tag(2)
+                ProfileScreen()
+                    .tag(3)
+            }
+            
+            HStack(spacing: 0) {
+                Spacer()
+                ForEach(tabs, id: \.self) { item in
+                    Button {
+                        activeIndex = item.id
+                        let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                        impactMed.impactOccurred()
+                    } label: {
+                        Image(activeIndex == item.id ? item.activeIcon : item.inActiveIcon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 28, height: 28)
+                            .frame(width: 70, height: 50)
+                    }
+                    Spacer()
+                }
+            }
+            .frame(maxWidth: .infinity)
         }
         .navigationBarBackButtonHidden(true)
     }
@@ -19,5 +62,6 @@ struct MainScreen: View {
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen()
+            .preferredColorScheme(.dark)
     }
 }
