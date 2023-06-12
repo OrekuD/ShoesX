@@ -55,7 +55,7 @@ struct LoginScreen: View {
                             Button {
                                 
                             } label: {
-                                OutlinedButtonView(
+                                OutlinedButton(
                                     label: "Continue with Google",
                                     iconName: "google",
                                     isSystemImage: false
@@ -65,7 +65,7 @@ struct LoginScreen: View {
                             Button {
                                 
                             } label: {
-                                OutlinedButtonView(
+                                OutlinedButton(
                                     label: "Continue with Facebook",
                                     iconName: "facebook",
                                     isSystemImage: false
@@ -75,7 +75,7 @@ struct LoginScreen: View {
                             Button {
                                 
                             } label: {
-                                OutlinedButtonView(
+                                OutlinedButton(
                                     label: "Continue with Apple",
                                     iconName: "apple.logo",
                                     isSystemImage: true

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CountryPickerView: View {
+struct CountryPicker: View {
     @EnvironmentObject var viewModel: AppViewModel;
     @State var searchTerm = "";
     @Binding var isCountryPickerOpen: Bool;

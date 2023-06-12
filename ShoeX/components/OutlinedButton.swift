@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OutlinedButtonView: View {
+struct OutlinedButton: View {
     @Environment(\.colorScheme) private var colorScheme;
     var label: String
     var iconName: String = ""
@@ -55,7 +55,7 @@ struct OutlinedButtonView: View {
 struct OutlinedButtonView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            OutlinedButtonView(label: "ok", iconName: "google", isSystemImage: false)
+            OutlinedButton(label: "ok", iconName: "google", isSystemImage: false)
         }
         .padding(.horizontal, 20)
     }

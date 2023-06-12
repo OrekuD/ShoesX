@@ -102,7 +102,7 @@ struct SecureYourAccountScreen: View {
                         NavigationLink {
                             MainScreen()
                         } label: {
-                            OutlinedButtonView(
+                            OutlinedButton(
                                 label: "Maybe Later"
                             )
                         }
@@ -124,7 +124,7 @@ struct SecureYourAccountScreen: View {
                 isCountryPickerOpen = false
             }
         }) {
-            CountryPickerView(isCountryPickerOpen: $isCountryPickerOpen)
+            CountryPicker(isCountryPickerOpen: $isCountryPickerOpen)
         }
     }
 }

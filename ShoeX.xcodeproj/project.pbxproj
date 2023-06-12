@@ -35,15 +35,16 @@
 		799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E12A348AEC00A26812 /* ButtonView.swift */; };
 		799E66E62A34AE5700A26812 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E52A34AE5700A26812 /* SignupScreen.swift */; };
 		799E66E82A34AFDE00A26812 /* SecureYourAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E72A34AFDE00A26812 /* SecureYourAccountScreen.swift */; };
-		799E66EA2A34B14800A26812 /* OutlinedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E92A34B14800A26812 /* OutlinedButtonView.swift */; };
+		799E66EA2A34B14800A26812 /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66E92A34B14800A26812 /* OutlinedButton.swift */; };
 		799E66ED2A34BA8E00A26812 /* AppViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66EC2A34BA8E00A26812 /* AppViewModal.swift */; };
-		79F4E5332A34C5CE0022B182 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */; };
+		79F4E5332A34C5CE0022B182 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5322A34C5CE0022B182 /* CountryPicker.swift */; };
 		79F4E5352A34D6120022B182 /* VerifyYourIdentityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */; };
 		79F4E5372A34DA6E0022B182 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5362A34DA6E0022B182 /* MainScreen.swift */; };
 		79F4E53C2A3571D60022B182 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E53B2A3571D60022B182 /* HomeScreen.swift */; };
 		79F4E53E2A3571E80022B182 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E53D2A3571E80022B182 /* SearchScreen.swift */; };
 		79F4E5402A3571FE0022B182 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E53F2A3571FE0022B182 /* ProfileScreen.swift */; };
 		79F4E5422A35720E0022B182 /* NotificationsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5412A35720E0022B182 /* NotificationsScreen.swift */; };
+		79F4E5442A3690310022B182 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4E5432A3690310022B182 /* SectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,15 +97,16 @@
 		799E66E12A348AEC00A26812 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		799E66E52A34AE5700A26812 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
 		799E66E72A34AFDE00A26812 /* SecureYourAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureYourAccountScreen.swift; sourceTree = "<group>"; };
-		799E66E92A34B14800A26812 /* OutlinedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButtonView.swift; sourceTree = "<group>"; };
+		799E66E92A34B14800A26812 /* OutlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
 		799E66EC2A34BA8E00A26812 /* AppViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModal.swift; sourceTree = "<group>"; };
-		79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+		79F4E5322A34C5CE0022B182 /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		79F4E5342A34D6120022B182 /* VerifyYourIdentityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyYourIdentityScreen.swift; sourceTree = "<group>"; };
 		79F4E5362A34DA6E0022B182 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		79F4E53B2A3571D60022B182 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		79F4E53D2A3571E80022B182 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		79F4E53F2A3571FE0022B182 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		79F4E5412A35720E0022B182 /* NotificationsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsScreen.swift; sourceTree = "<group>"; };
+		79F4E5432A3690310022B182 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,9 +230,10 @@
 			isa = PBXGroup;
 			children = (
 				799E66DF2A3484E900A26812 /* TextInput.swift */,
+				79F4E5432A3690310022B182 /* SectionHeader.swift */,
 				799E66E12A348AEC00A26812 /* ButtonView.swift */,
-				79F4E5322A34C5CE0022B182 /* CountryPickerView.swift */,
-				799E66E92A34B14800A26812 /* OutlinedButtonView.swift */,
+				79F4E5322A34C5CE0022B182 /* CountryPicker.swift */,
+				799E66E92A34B14800A26812 /* OutlinedButton.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -395,12 +398,13 @@
 				79F4E53E2A3571E80022B182 /* SearchScreen.swift in Sources */,
 				79F4E5402A3571FE0022B182 /* ProfileScreen.swift in Sources */,
 				799E66742A34688200A26812 /* ContentView.swift in Sources */,
-				799E66EA2A34B14800A26812 /* OutlinedButtonView.swift in Sources */,
+				799E66EA2A34B14800A26812 /* OutlinedButton.swift in Sources */,
 				799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */,
 				79F4E53C2A3571D60022B182 /* HomeScreen.swift in Sources */,
 				79F4E5352A34D6120022B182 /* VerifyYourIdentityScreen.swift in Sources */,
-				79F4E5332A34C5CE0022B182 /* CountryPickerView.swift in Sources */,
+				79F4E5332A34C5CE0022B182 /* CountryPicker.swift in Sources */,
 				799E66ED2A34BA8E00A26812 /* AppViewModal.swift in Sources */,
+				79F4E5442A3690310022B182 /* SectionHeader.swift in Sources */,
 				799E66722A34688200A26812 /* ShoeXApp.swift in Sources */,
 				799E66E82A34AFDE00A26812 /* SecureYourAccountScreen.swift in Sources */,
 				79F4E5422A35720E0022B182 /* NotificationsScreen.swift in Sources */,
