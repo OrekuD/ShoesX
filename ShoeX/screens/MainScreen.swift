@@ -23,10 +23,10 @@ struct MainScreen: View {
     }
     
     var tabs: [TabItem] = [
-        TabItem(id: 0, activeIcon: "logo", inActiveIcon: "logo-disabled"),
-        TabItem(id: 1, activeIcon: "search", inActiveIcon: "search-disabled"),
-        TabItem(id: 2, activeIcon: "notifications", inActiveIcon: "notifications-disabled"),
-        TabItem(id: 3, activeIcon: "profile", inActiveIcon: "profile-disabled"),
+        TabItem(id: 0, activeIcon: "home", inActiveIcon: "home_inactive"),
+        TabItem(id: 1, activeIcon: "search", inActiveIcon: "search_inactive"),
+        TabItem(id: 2, activeIcon: "notifications", inActiveIcon: "notifications_inactive"),
+        TabItem(id: 3, activeIcon: "profile", inActiveIcon: "profile_inactive"),
     ]
     
     var body: some View {

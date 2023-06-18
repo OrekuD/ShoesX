@@ -15,15 +15,14 @@ struct TrendingToday: Identifiable {
 }
 
 struct TrendingTodayCard: View {
-    let screenWidth: CGFloat = UIScreen.main.bounds.width;
     public var item: TrendingToday
     
     var body: some View {
         VStack(spacing: 0) {
             Image("slide_2")
                 .resizable()
-                .scaledToFill()
-                .frame(width: (screenWidth - 100) / 2, height: (screenWidth - 100) / 2)
+                .frame(maxWidth: .infinity)
+                .aspectRatio(1/1, contentMode: .fill)
                 .overlay {
                     HStack(spacing: 8) {
                         Circle()
@@ -39,7 +38,6 @@ struct TrendingTodayCard: View {
                     .background(.white)
                     .padding(8)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    
                 }
             VStack(spacing: 8) {
                 Text(item.name)
@@ -59,7 +57,6 @@ struct TrendingTodayCard: View {
             .padding(12)
             Spacer()
         }
-        .frame(width: (screenWidth - 100) / 2)
         .border(Color("border"), width: 1)
     }
 }

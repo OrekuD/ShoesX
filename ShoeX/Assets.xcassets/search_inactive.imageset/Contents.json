@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "notifications_dark.svg",
+      "filename" : "search_dark_inactive.svg",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "notificatiions_light.svg",
+      "filename" : "search_light_inactive.svg",
       "idiom" : "universal"
     },
     {
@@ -21,7 +21,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "notifications_dark 1.svg",
+      "filename" : "search_dark_inactive 1.svg",
       "idiom" : "universal"
     }
   ],

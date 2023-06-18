@@ -15,15 +15,30 @@ struct Recommended: Identifiable {
 }
 
 struct RecommendedCard: View {
-    let screenWidth: CGFloat = UIScreen.main.bounds.width;
     public var item: Recommended
     
     var body: some View {
         VStack(spacing: 0) {
             Image("slide_2")
                 .resizable()
-                .scaledToFill()
-                .frame(width: (screenWidth - 100) / 2, height: (screenWidth - 100) / 2)
+                .frame(maxWidth: .infinity)
+                .aspectRatio(1/1, contentMode: .fill)
+//                .overlay {
+//                    HStack(spacing: 8) {
+//                        Circle()
+//                            .frame(width: 8, height: 8)
+//                            .foregroundColor(.green)
+//                        
+//                        Text("h Sold")
+//                            .foregroundColor(.black)
+//                            .font(.custom("Satoshi-Bold", size: 12))
+//                        
+//                    }
+//                    .padding(8)
+//                    .background(.white)
+//                    .padding(8)
+//                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+//                }
             
             VStack(spacing: 6) {
                 Text(item.name)
@@ -39,19 +54,16 @@ struct RecommendedCard: View {
                     .font(.custom("Satoshi-Bold", size: 20))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                HStack(spacing: 0) {
-                    Text("Last price: $\(item.lastPrice)")
-                        .foregroundColor(.white)
-                        .font(.custom("Satoshi-Regular", size: 12))
-                    
-                }
-                .padding(8)
-                .background(Color("green"))
-                .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Last price: $\(item.lastPrice)")
+                    .foregroundColor(.white)
+                    .font(.custom("Satoshi-Regular", size: 12))
+                    .padding(8)
+                    .background(Color("green"))
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(12)
+            Spacer()
         }
-        .frame(width: (screenWidth - 100) / 2)
         .border(Color("border"), width: 1)
     }
 }
@@ -59,6 +71,6 @@ struct RecommendedCard: View {
 struct RecommendedCard_Previews: PreviewProvider {
     static var previews: some View {
         RecommendedCard(item: .init(name: "Nike Air Max Dawn", price: 260, lastPrice: 250))
-            .frame(height: 200)
+            .frame(width: 200, height: 200)
     }
 }

@@ -15,15 +15,15 @@ struct NewRelease: Identifiable {
 }
 
 struct NewReleaseCard: View {
-    let screenWidth = UIScreen.main.bounds.width;
+//    let screenWidth = UIScreen.main.bounds.width;
     public var item: NewRelease;
     
     var body: some View {
         VStack(spacing: 0) {
             Image("slide_2")
                 .resizable()
-                .scaledToFill()
-                .frame(width: (screenWidth - 100) / 2, height: (screenWidth - 100) / 2)
+                .frame(maxWidth: .infinity)
+                .aspectRatio(1/1, contentMode: .fill)
                 .overlay {
                     HStack {
                         Text("\(item.date)")
@@ -57,7 +57,7 @@ struct NewReleaseCard: View {
                         .font(.custom("Satoshi-Bold", size: 18))
                         .padding(.vertical, 12)
                         .frame(maxWidth: .infinity)
-                        .border(.white)
+                        .border(.primary)
                         .foregroundColor(.primary)
                 }
                 
@@ -65,7 +65,6 @@ struct NewReleaseCard: View {
             .padding(12)
             Spacer()
         }
-        .frame(width: (screenWidth - 100) / 2)
         .border(Color("border"), width: 1)
     }
 }
