@@ -9,8 +9,29 @@ import SwiftUI
 
 struct HomeScreen: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
-    var screenWidth: CGFloat = UIScreen.main.bounds.width;
-    var slides: [Int] = [0, 1, 2, 3, 4]
+    let screenWidth: CGFloat = UIScreen.main.bounds.width;
+    let slides: [Int] = [0, 1, 2, 3, 4]
+    let trendingToday: [TrendingToday] = [
+        .init(name: "Nike Free Terra Vista Next Nature", price: 110, numberOfItemsSold: 5123),
+        .init(name: "Nike ACG Mountain Fly Low SE", price: 170, numberOfItemsSold: 1357),
+        .init(name: "Nike Air Force 1 '07 ESS", price: 210, numberOfItemsSold: 4357),
+        .init(name: "Nike Air Max Dawn SE", price: 90, numberOfItemsSold: 325),
+        .init(name: "Nike Wearallday", price: 300, numberOfItemsSold: 425),
+    ]
+    
+    let recommended: [Recommended] = [
+        .init(name: "Nike Free Terra Vista Next Nature", price: 120, lastPrice: 100),
+        .init(name: "Nike ACG Mountain Fly Low SE", price: 140, lastPrice: 120),
+        .init(name: "Nike Air Force 1 '07 ES", price: 200, lastPrice: 190),
+        .init(name: "Nike Air Max Dawn SE", price: 270, lastPrice: 260),
+    ]
+    
+    let newReleases: [NewRelease] = [
+        .init(name: "Nike Air Max Dawn SEe", date: "Tomorrow"),
+        .init(name: "Nike Air Force 1 '07 ESS", date: "dec 12"),
+        .init(name: "Nike Wearallday", date: "dec 14"),
+        .init(name: "Nike Free Terra Vista Next Nature", date: "dec 24"),
+    ]
     
     var body: some View {
         ScrollView {
@@ -90,36 +111,8 @@ struct HomeScreen: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
-                        ForEach(slides, id: \.self) { _ in
-                            VStack {
-                                Image("slide_2")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: (screenWidth - 100) / 2)
-                                
-                                Spacer()
-                                VStack {
-                                    Text("Nike Free Terra Vista Next Nature")
-                                        .font(.custom("Satoshi-Regular", size: 16))
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .padding(.bottom, 2)
-                                    
-                                    Text("Men’s shoes")
-                                        .font(.custom("Satoshi-Regular", size: 16))
-                                        .foregroundColor(.secondary)
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .padding(.bottom, 2)
-                                    
-                                    Text("$100")
-                                        .font(.custom("Satoshi-Bold", size: 20))
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                }
-                                .padding(12)
-                            }
-                            .padding(.top, 8)
-                            .frame(width: (screenWidth - 100) / 2, height: (screenWidth - 100) / 2 * 1.76)
-                            .border(Color("border"), width: 1)
-//                            .background(.red)
+                        ForEach(trendingToday) { item in
+                            TrendingTodayCard(item: item)
                         }
                     }
                     .padding(.leading, 20)
@@ -130,7 +123,27 @@ struct HomeScreen: View {
                 
                 SectionHeader(title: "Recommended for You")
                 
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(recommended) { item in
+                            RecommendedCard(item: item)
+                        }
+                    }
+                    .padding(.leading, 20)
+                    .padding(.trailing, 12)
+                }
+                
                 SectionHeader(title: "Release Calender")
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(newReleases) { item in
+                            NewReleaseCard(item: item)
+                        }
+                    }
+                    .padding(.leading, 20)
+                    .padding(.trailing, 12)
+                }
                 
                 Spacer()
             }

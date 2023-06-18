@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797B93982A3DEF0A001C4CA2 /* TrendingTodayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B93972A3DEF0A001C4CA2 /* TrendingTodayCard.swift */; };
+		797B939A2A3DF1BD001C4CA2 /* RecommendedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B93992A3DF1BD001C4CA2 /* RecommendedCard.swift */; };
+		797B939C2A3F2286001C4CA2 /* NewReleaseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B939B2A3F2286001C4CA2 /* NewReleaseCard.swift */; };
 		799E66722A34688200A26812 /* ShoeXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66712A34688200A26812 /* ShoeXApp.swift */; };
 		799E66742A34688200A26812 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E66732A34688200A26812 /* ContentView.swift */; };
 		799E66762A34688200A26812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799E66752A34688200A26812 /* Assets.xcassets */; };
@@ -65,6 +68,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		797B93972A3DEF0A001C4CA2 /* TrendingTodayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTodayCard.swift; sourceTree = "<group>"; };
+		797B93992A3DF1BD001C4CA2 /* RecommendedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCard.swift; sourceTree = "<group>"; };
+		797B939B2A3F2286001C4CA2 /* NewReleaseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCard.swift; sourceTree = "<group>"; };
 		799E666E2A34688200A26812 /* ShoeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799E66712A34688200A26812 /* ShoeXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeXApp.swift; sourceTree = "<group>"; };
 		799E66732A34688200A26812 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +140,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797B93962A3DEEE6001C4CA2 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				797B93972A3DEF0A001C4CA2 /* TrendingTodayCard.swift */,
+				797B93992A3DF1BD001C4CA2 /* RecommendedCard.swift */,
+				797B939B2A3F2286001C4CA2 /* NewReleaseCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		799E66652A34688200A26812 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +245,7 @@
 		799E66DE2A3484C700A26812 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				797B93962A3DEEE6001C4CA2 /* Cards */,
 				799E66DF2A3484E900A26812 /* TextInput.swift */,
 				79F4E5432A3690310022B182 /* SectionHeader.swift */,
 				799E66E12A348AEC00A26812 /* ButtonView.swift */,
@@ -396,7 +413,9 @@
 				799E66E62A34AE5700A26812 /* SignupScreen.swift in Sources */,
 				799E66DD2A347B8500A26812 /* LoginScreen.swift in Sources */,
 				79F4E53E2A3571E80022B182 /* SearchScreen.swift in Sources */,
+				797B939C2A3F2286001C4CA2 /* NewReleaseCard.swift in Sources */,
 				79F4E5402A3571FE0022B182 /* ProfileScreen.swift in Sources */,
+				797B939A2A3DF1BD001C4CA2 /* RecommendedCard.swift in Sources */,
 				799E66742A34688200A26812 /* ContentView.swift in Sources */,
 				799E66EA2A34B14800A26812 /* OutlinedButton.swift in Sources */,
 				799E66E22A348AEC00A26812 /* ButtonView.swift in Sources */,
@@ -406,6 +425,7 @@
 				799E66ED2A34BA8E00A26812 /* AppViewModal.swift in Sources */,
 				79F4E5442A3690310022B182 /* SectionHeader.swift in Sources */,
 				799E66722A34688200A26812 /* ShoeXApp.swift in Sources */,
+				797B93982A3DEF0A001C4CA2 /* TrendingTodayCard.swift in Sources */,
 				799E66E82A34AFDE00A26812 /* SecureYourAccountScreen.swift in Sources */,
 				79F4E5422A35720E0022B182 /* NotificationsScreen.swift in Sources */,
 				799E66E02A3484E900A26812 /* TextInput.swift in Sources */,
