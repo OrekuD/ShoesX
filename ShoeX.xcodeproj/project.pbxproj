@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		793A05A02A3F759700A9D4F7 /* NewReleasesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A059F2A3F759600A9D4F7 /* NewReleasesScreen.swift */; };
 		793A05A22A3F9BDF00A9D4F7 /* RecommendedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A05A12A3F9BDF00A9D4F7 /* RecommendedScreen.swift */; };
+		793A05A42A3FA8B800A9D4F7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A05A32A3FA8B800A9D4F7 /* Header.swift */; };
 		797B93982A3DEF0A001C4CA2 /* TrendingTodayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B93972A3DEF0A001C4CA2 /* TrendingTodayCard.swift */; };
 		797B939A2A3DF1BD001C4CA2 /* RecommendedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B93992A3DF1BD001C4CA2 /* RecommendedCard.swift */; };
 		797B939C2A3F2286001C4CA2 /* NewReleaseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B939B2A3F2286001C4CA2 /* NewReleaseCard.swift */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		793A059F2A3F759600A9D4F7 /* NewReleasesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesScreen.swift; sourceTree = "<group>"; };
 		793A05A12A3F9BDF00A9D4F7 /* RecommendedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedScreen.swift; sourceTree = "<group>"; };
+		793A05A32A3FA8B800A9D4F7 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		797B93972A3DEF0A001C4CA2 /* TrendingTodayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTodayCard.swift; sourceTree = "<group>"; };
 		797B93992A3DF1BD001C4CA2 /* RecommendedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCard.swift; sourceTree = "<group>"; };
 		797B939B2A3F2286001C4CA2 /* NewReleaseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCard.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				799E66DF2A3484E900A26812 /* TextInput.swift */,
 				79F4E5432A3690310022B182 /* SectionHeader.swift */,
 				798467232A3F3E4F00FABCE1 /* CategoryHeader.swift */,
+				793A05A32A3FA8B800A9D4F7 /* Header.swift */,
 				799E66E12A348AEC00A26812 /* ButtonView.swift */,
 				79F4E5322A34C5CE0022B182 /* CountryPicker.swift */,
 				799E66E92A34B14800A26812 /* OutlinedButton.swift */,
@@ -436,6 +439,7 @@
 				79F4E5352A34D6120022B182 /* VerifyYourIdentityScreen.swift in Sources */,
 				793A05A22A3F9BDF00A9D4F7 /* RecommendedScreen.swift in Sources */,
 				79F4E5332A34C5CE0022B182 /* CountryPicker.swift in Sources */,
+				793A05A42A3FA8B800A9D4F7 /* Header.swift in Sources */,
 				799E66ED2A34BA8E00A26812 /* AppViewModal.swift in Sources */,
 				79F4E5442A3690310022B182 /* SectionHeader.swift in Sources */,
 				799E66722A34688200A26812 /* ShoeXApp.swift in Sources */,

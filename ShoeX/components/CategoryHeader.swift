@@ -16,7 +16,8 @@ struct CategoryHeader: View {
             Text(title)
                 .font(.custom("Satoshi-Bold", size: 20))
             Rectangle()
-                .frame(width: .infinity, height: 1)
+                .frame(maxWidth: .infinity)
+                .frame(height: 1)
                 .foregroundColor(Color("border"))
         }
         .padding(.top, 16)
@@ -29,7 +30,6 @@ struct CategoryHeader: View {
                     .scaledToFit()
                     .frame(width: 22, height: 22)
                     .foregroundColor(.primary)
-                    .padding(.bottom, 14)
             }
             .padding(.leading, 20)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -37,7 +37,7 @@ struct CategoryHeader: View {
     }
 }
 
-struct Header_Previews: PreviewProvider {
+struct CategoryHeader_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHeader(title: "Testing")
             .preferredColorScheme(.dark)
