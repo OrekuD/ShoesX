@@ -28,7 +28,7 @@ struct TrendingTodayScreen: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(trendingToday) { item in
-                        TrendingTodayCard(item: item)
+                        TrendingTodayCard(item: item, cardType: .compact)
                     }
                 }
                 .padding(.top, 20)

@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct Recommended: Identifiable {
-    let id: UUID = .init()
-    var name: String
-    var price: Int
-    var lastPrice: Int
-}
 
 struct RecommendedCard: View {
     public var item: Recommended
@@ -23,27 +17,14 @@ struct RecommendedCard: View {
                 .resizable()
                 .frame(maxWidth: .infinity)
                 .aspectRatio(1/1, contentMode: .fill)
-//                .overlay {
-//                    HStack(spacing: 8) {
-//                        Circle()
-//                            .frame(width: 8, height: 8)
-//                            .foregroundColor(.green)
-//                        
-//                        Text("h Sold")
-//                            .foregroundColor(.black)
-//                            .font(.custom("Satoshi-Bold", size: 12))
-//                        
-//                    }
-//                    .padding(8)
-//                    .background(.white)
-//                    .padding(8)
-//                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-//                }
             
             VStack(spacing: 6) {
                 Text(item.name)
                     .font(.custom("Satoshi-Regular", size: 16))
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(.primary)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
                 
                 Text("Men’s shoes")
                     .font(.custom("Satoshi-Regular", size: 16))
@@ -53,6 +34,7 @@ struct RecommendedCard: View {
                 Text("$\(item.price)")
                     .font(.custom("Satoshi-Bold", size: 20))
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(.primary)
                 
                 Text("Last price: $\(item.lastPrice)")
                     .foregroundColor(.white)

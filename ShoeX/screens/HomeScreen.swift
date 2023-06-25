@@ -15,38 +15,11 @@ enum Screens {
 
 struct HomeScreen: View {
     @Environment(\.safeAreaInsets) private var safeAreaInsets
+    @EnvironmentObject private var appModel: AppViewModel
     let screenWidth: CGFloat = UIScreen.main.bounds.width;
     @State private var navigationPath: [Screens] = []
     let slides: [Int] = [0, 1, 2, 3, 4]
-    let trendingToday: [TrendingToday] = [
-        .init(name: "Nike Free Terra Vista Next Nature", price: 110, numberOfItemsSold: 5123),
-        .init(name: "Nike ACG Mountain Fly Low SE", price: 170, numberOfItemsSold: 1357),
-        .init(name: "Nike Air Force 1 '07 ESS", price: 210, numberOfItemsSold: 4357),
-        .init(name: "Nike Air Max Dawn SE", price: 90, numberOfItemsSold: 325),
-        .init(name: "Nike Wearallday", price: 300, numberOfItemsSold: 425),
-    ]
-    
-    let recommended: [Recommended] = [
-        .init(name: "Nike Free Terra Vista Next Nature", price: 120, lastPrice: 100),
-        .init(name: "Nike ACG Mountain Fly Low SE", price: 140, lastPrice: 120),
-        .init(name: "Nike Air Force 1 '07 ES", price: 200, lastPrice: 190),
-        .init(name: "Nike Air Max Dawn SE", price: 270, lastPrice: 260),
-    ]
-    
-    let newReleases: [NewRelease] = [
-        .init(name: "Nike Air Max Dawn SEe", date: "Tomorrow"),
-        .init(name: "Nike Air Force 1 '07 ESS", date: "dec 12"),
-        .init(name: "Nike Wearallday", date: "dec 14"),
-        .init(name: "Nike Free Terra Vista Next Nature", date: "dec 24"),
-    ]
-    
-    let addidas: [NewRelease] = [
-        .init(name: "Nike Free Terra Vista Next Nature", date: "dec 24"),
-        .init(name: "Nike Air Max Dawn SEe", date: "Tomorrow"),
-        .init(name: "Nike Air Force 1 '07 ESS", date: "dec 12"),
-        .init(name: "Nike Wearallday", date: "dec 14"),
-        .init(name: "Nike Free Terra Vista Next Nature", date: "dec 24"),
-    ]
+   
     
     let columns = [
         GridItem(.adaptive(minimum: ((UIScreen.main.bounds.width - 40) / 2) - 10)),
@@ -134,9 +107,13 @@ struct HomeScreen: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 10) {
-                            ForEach(trendingToday) { item in
-                                TrendingTodayCard(item: item)
-                                    .frame(width: (screenWidth - 100) / 2)
+                            ForEach(appModel.trendingItems) { item in
+                                NavigationLink {
+                                    ProductScreen()
+                                } label: {
+                                    TrendingTodayCard(item: item, cardType: .compact)
+                                }
+                                .frame(width: (screenWidth - 100) / 2)
                             }
                         }
                         .padding(.leading, 20)
@@ -192,9 +169,13 @@ struct HomeScreen: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 10) {
-                            ForEach(recommended) { item in
-                                RecommendedCard(item: item)
-                                    .frame(width: (screenWidth - 100) / 2)
+                            ForEach(appModel.recommended) { item in
+                                NavigationLink {
+                                    ProductScreen()
+                                } label: {
+                                    RecommendedCard(item: item)
+                                }
+                                .frame(width: (screenWidth - 100) / 2)
                             }
                         }
                         .padding(.leading, 20)
@@ -208,7 +189,7 @@ struct HomeScreen: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 10) {
-                            ForEach(newReleases) { item in
+                            ForEach(appModel.newReleases) { item in
                                 NewReleaseCard(item: item)
                                     .frame(width: (screenWidth - 100) / 2)
                             }
@@ -265,8 +246,12 @@ struct HomeScreen: View {
                         .padding(.bottom, 12)
                     
                     LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(addidas) { item in
-                            NewReleaseCard(item: item)
+                        ForEach(appModel.newReleases) { item in
+                            NavigationLink {
+                                ProductScreen()
+                            } label: {
+                                NewReleaseCard(item: item)
+                            }
                         }
                     }
                 }
@@ -283,8 +268,12 @@ struct HomeScreen: View {
                         .padding(.bottom, 12)
                     
                     LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(addidas) { item in
-                            NewReleaseCard(item: item)
+                        ForEach(appModel.newReleases) { item in
+                            NavigationLink {
+                                ProductScreen()
+                            } label: {
+                                NewReleaseCard(item: item)
+                            }
                         }
                     }
                 }
@@ -300,8 +289,10 @@ struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreen()
             .preferredColorScheme(.dark)
+            .environmentObject(AppViewModel())
         HomeScreen()
             .preferredColorScheme(.light)
+            .environmentObject(AppViewModel())
     }
 }
 

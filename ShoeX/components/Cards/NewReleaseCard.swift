@@ -8,14 +8,7 @@
 import SwiftUI
 
 
-struct NewRelease: Identifiable {
-    let id: UUID = .init()
-    var name: String
-    var date: String
-}
-
 struct NewReleaseCard: View {
-//    let screenWidth = UIScreen.main.bounds.width;
     public var item: NewRelease;
     
     var body: some View {
@@ -43,6 +36,9 @@ struct NewReleaseCard: View {
                 Text(item.name)
                     .font(.custom("Satoshi-Regular", size: 16))
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(.primary)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(2)
                 
                 Spacer()
                 Text("Men’s shoes")

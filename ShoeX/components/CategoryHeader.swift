@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CategoryHeader: View {
-    @Environment(\.presentationMode) var presentationMode
-    var title: String
+    public var title: String
+    @Environment(\.presentationMode) private var presentationMode
+   
     
     var body: some View {
         VStack(spacing: 16) {

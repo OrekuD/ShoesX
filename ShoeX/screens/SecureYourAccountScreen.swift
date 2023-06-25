@@ -117,7 +117,6 @@ struct SecureYourAccountScreen: View {
             }
             .frame(maxWidth: .infinity)
         }
-//        .navigationBarBackButtonHidden(true)
         .padding(.horizontal, 20)
         .sheet(isPresented: $isCountryPickerOpen, onDismiss: {
             withAnimation {
