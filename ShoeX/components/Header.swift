@@ -2,7 +2,7 @@
 //  Header.swift
 //  ShoeX
 //
-//  Created by Cyboticx LLC on 18/06/2023.
+//  Created by David Opoku on 18/06/2023.
 //
 
 import SwiftUI
@@ -32,7 +32,7 @@ struct Header: View {
             .padding(.top, 12)
             .padding(.horizontal, 20)
             Rectangle()
-                .frame(width: .infinity, height: 1)
+                .frame(height: 1)
                 .foregroundColor(Color("border"))
         }
         .frame(maxWidth: .infinity)

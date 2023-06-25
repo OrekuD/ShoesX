@@ -2,7 +2,7 @@
 //  AppViewModal.swift
 //  ShoeX
 //
-//  Created by Cyboticx LLC on 10/06/2023.
+//  Created by David Opoku on 10/06/2023.
 //
 
 import Foundation

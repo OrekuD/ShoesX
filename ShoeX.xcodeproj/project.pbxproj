@@ -11,7 +11,6 @@
 		793A05A22A3F9BDF00A9D4F7 /* RecommendedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A05A12A3F9BDF00A9D4F7 /* RecommendedScreen.swift */; };
 		793A05A42A3FA8B800A9D4F7 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A05A32A3FA8B800A9D4F7 /* Header.swift */; };
 		79607DF42A47478B00A0BBD5 /* ProductScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79607DF32A47478B00A0BBD5 /* ProductScreen.swift */; };
-		79607DF62A47482300A0BBD5 /* ProductHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79607DF52A47482300A0BBD5 /* ProductHeader.swift */; };
 		797B93982A3DEF0A001C4CA2 /* TrendingTodayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B93972A3DEF0A001C4CA2 /* TrendingTodayCard.swift */; };
 		797B939A2A3DF1BD001C4CA2 /* RecommendedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B93992A3DF1BD001C4CA2 /* RecommendedCard.swift */; };
 		797B939C2A3F2286001C4CA2 /* NewReleaseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B939B2A3F2286001C4CA2 /* NewReleaseCard.swift */; };
@@ -79,7 +78,6 @@
 		793A05A12A3F9BDF00A9D4F7 /* RecommendedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedScreen.swift; sourceTree = "<group>"; };
 		793A05A32A3FA8B800A9D4F7 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		79607DF32A47478B00A0BBD5 /* ProductScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScreen.swift; sourceTree = "<group>"; };
-		79607DF52A47482300A0BBD5 /* ProductHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeader.swift; sourceTree = "<group>"; };
 		797B93972A3DEF0A001C4CA2 /* TrendingTodayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTodayCard.swift; sourceTree = "<group>"; };
 		797B93992A3DF1BD001C4CA2 /* RecommendedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCard.swift; sourceTree = "<group>"; };
 		797B939B2A3F2286001C4CA2 /* NewReleaseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCard.swift; sourceTree = "<group>"; };
@@ -267,7 +265,6 @@
 				799E66DF2A3484E900A26812 /* TextInput.swift */,
 				79F4E5432A3690310022B182 /* SectionHeader.swift */,
 				798467232A3F3E4F00FABCE1 /* CategoryHeader.swift */,
-				79607DF52A47482300A0BBD5 /* ProductHeader.swift */,
 				793A05A32A3FA8B800A9D4F7 /* Header.swift */,
 				799E66E12A348AEC00A26812 /* ButtonView.swift */,
 				79F4E5322A34C5CE0022B182 /* CountryPicker.swift */,
@@ -436,7 +433,6 @@
 				79F4E53E2A3571E80022B182 /* SearchScreen.swift in Sources */,
 				797B939C2A3F2286001C4CA2 /* NewReleaseCard.swift in Sources */,
 				793A05A02A3F759700A9D4F7 /* NewReleasesScreen.swift in Sources */,
-				79607DF62A47482300A0BBD5 /* ProductHeader.swift in Sources */,
 				79F4E5402A3571FE0022B182 /* ProfileScreen.swift in Sources */,
 				797B939A2A3DF1BD001C4CA2 /* RecommendedCard.swift in Sources */,
 				799E66742A34688200A26812 /* ContentView.swift in Sources */,

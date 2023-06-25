@@ -2,7 +2,7 @@
 //  VerifyYourIdentityScreen.swift
 //  ShoeX
 //
-//  Created by Cyboticx LLC on 10/06/2023.
+//  Created by David Opoku on 10/06/2023.
 //
 
 import SwiftUI
@@ -86,7 +86,7 @@ struct VerifyYourIdentityScreen: View {
             }
             .frame(maxWidth: .infinity)
         }
-//        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden(true)
         .padding(.horizontal, 20)
     }
 }

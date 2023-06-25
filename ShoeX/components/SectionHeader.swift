@@ -2,7 +2,7 @@
 //  SectionHeader.swift
 //  ShoeX
 //
-//  Created by Cyboticx LLC on 11/06/2023.
+//  Created by David Opoku on 11/06/2023.
 //
 
 import SwiftUI

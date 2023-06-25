@@ -2,7 +2,7 @@
 //  SecureYourAccount.swift
 //  ShoeX
 //
-//  Created by Cyboticx LLC on 10/06/2023.
+//  Created by David Opoku on 10/06/2023.
 //
 
 import SwiftUI
@@ -118,6 +118,7 @@ struct SecureYourAccountScreen: View {
             .frame(maxWidth: .infinity)
         }
         .padding(.horizontal, 20)
+        .navigationBarBackButtonHidden(true)
         .sheet(isPresented: $isCountryPickerOpen, onDismiss: {
             withAnimation {
                 isCountryPickerOpen = false
