@@ -16,6 +16,7 @@ struct ShoeXApp: App {
             ContentView()
                 .background(.black)
                 .environmentObject(appViewModel)
+//                .environment(\.colorScheme, .light)
         }
     }
 }
